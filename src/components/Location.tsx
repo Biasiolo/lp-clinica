@@ -7,7 +7,7 @@ const Location = () => {
       icon: MapPin,
       title: "Endereço",
       content: "Rua Síria, 25 - São José dos Campos",
-      action: () => window.open("https://maps.google.com/?q=Rua+Síria,+25+São+José+dos+Campos", "_blank")
+      action: () => window.open("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.229781020374!2d-45.885467924680924!3d-23.198295179050923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4a425683d85d%3A0x2504be6f79cb18f7!2sR.%20S%C3%ADria%2C%2025%20-%20Jardim%20Oswaldo%20Cruz%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012216-530!5e0!3m2!1sen!2sbr!4v1754316571519!5m2!1sen!2sbr" )
     },
     {
       icon: Clock,
@@ -87,7 +87,7 @@ const Location = () => {
               <CardContent className="p-0">
                 <div className="relative h-96 bg-muted">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.845!2d-45.884!3d-23.179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEwJzQ0LjQiUyA0NcKwNTMnMDIuNCJX!5e0!3m2!1spt-BR!2sbr!4v1"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.229781020374!2d-45.885467924680924!3d-23.198295179050923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4a425683d85d%3A0x2504be6f79cb18f7!2sR.%20S%C3%ADria%2C%2025%20-%20Jardim%20Oswaldo%20Cruz%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012216-530!5e0!3m2!1sen!2sbr!4v1754316571519!5m2!1sen!2sbr"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}

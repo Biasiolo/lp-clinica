@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-psychology.jpg";
+import logo from "@/assets/logo.png"; // Importação do logo
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -19,6 +20,13 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
+        {/* Logo acima do título */}
+        <img 
+          src={logo} 
+          alt="Logo Voia" 
+          className="mx-auto mb-6 w-48 md:w-56" 
+        />
+
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           Bem Star
           <span className="block text-4xl md:text-6xl font-light opacity-90">
@@ -43,7 +51,7 @@ const Hero = () => {
           <Button 
             variant="outline" 
             size="lg"
-            className="px-8 py-6 text-lg border-white text-white hover:bg-white hover:text-primary"
+            className="px-8 py-6 text-lg border-white text-indigo-500 hover:bg-white hover:text-primary"
             onClick={() => scrollToSection('sobre')}
           >
             Saiba Mais
