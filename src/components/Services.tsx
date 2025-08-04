@@ -6,7 +6,7 @@ const Services = () => {
     {
       icon: Brain,
       title: "Psicoterapia Individual",
-      description: "Atendimento personalizado para adultos, focado no autoconhecimento e desenvolvimento pessoal.",
+      description: "Atendimento personalizado para adultos, autoconhecimento e desenvolvimento pessoal.",
       features: ["Terapia Cognitivo-Comportamental", "Abordagem Humanística", "Sessões de 50 minutos"]
     },
     {
