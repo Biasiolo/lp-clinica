@@ -8,6 +8,8 @@ import { format } from "date-fns";
 import { ptBR } from "date-fns/locale";
 import { cn } from "@/lib/utils";
 
+import clinicBg from "@/assets/clinic.jpg";
+
 const Appointment = () => {
   const [selectedDate, setSelectedDate] = useState<Date>();
   const [selectedService, setSelectedService] = useState<string>("");
@@ -34,13 +36,21 @@ const Appointment = () => {
   const isFormValid = selectedDate && selectedService;
 
   return (
-    <section id="agendamento" className="py-20 bg-gradient-soft">
-      <div className="container mx-auto px-6">
+    <section
+  id="agendamento"
+  className="relative py-20 bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: `url(${clinicBg})` }}
+>
+  {/* Overlay escurecido */}
+  <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-indigo-900/60 to-purple-900/70 z-0" />
+
+  {/* Conteúdo sobre o overlay */}
+  <div className="relative z-10 container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Agende sua Consulta
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-gray-100 max-w-3xl mx-auto">
             Escolha o serviço desejado e a data de sua preferência. 
             Entraremos em contato via WhatsApp para confirmar o horário.
           </p>
